@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart'
+import 'package:flutter/material.dart';
+import 'package:panda/widgets/AppBarWidget.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -8,6 +9,11 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('HomePage'),
+      ),
+      body: ListView(
+        children: [
+          AppBarWidget(),
+        ],
       ),
     );
   }

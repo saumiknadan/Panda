@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
       title: 'Panda',
       theme: ThemeData(
         
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
+        scaffoldBackgroundColor: Color(0xFFF5F5F3),
       ),
       home:  MyHomePage(),
     );
