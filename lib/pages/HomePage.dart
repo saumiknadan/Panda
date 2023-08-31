@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:panda/widgets/AppBarWidget.dart';
+import 'package:panda/widgets/CategoryWidget.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -69,7 +70,10 @@ class MyHomePage extends StatelessWidget {
                 fontSize: 20,
               ),
             ),
-            )
+            ),
+
+            // Category Widget
+            CategoryWidget(),
         ],
       ),
     );
