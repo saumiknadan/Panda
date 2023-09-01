@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:panda/widgets/AppBarWidget.dart';
 import 'package:panda/widgets/CategoryWidget.dart';
 
+import '../widgets/PopularItemWidget.dart';
+
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
@@ -74,6 +76,20 @@ class MyHomePage extends StatelessWidget {
 
             // Category Widget
             CategoryWidget(),
+
+            // Popular Item
+              Padding(
+            padding: EdgeInsets.only(top: 20, left: 10),
+            child: Text("Popular Item",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
+            ),
+
+             // Popular Item Widget
+            PopularItemWidget(),
         ],
       ),
     );
